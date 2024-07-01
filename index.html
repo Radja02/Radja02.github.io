@@ -81,19 +81,45 @@
                     <img src="img/img-1.jpeg" alt="Daily Market 1">
                     <p>Speaker Portable</p>
                     <p>Speaker berkualitas tinggi dengan desain portabel yang mudah dibawa ke mana saja.</p>
-                    <a href="https://images.app.goo.gl/7AxmR44QGQ9w781P8" class="btn-dly">Lihat Detail</a>
+                    <button class="showMoreBtn btn-dly">Lihat Lainnya</button>
+                    <div class="moreInfo" style="display:none;">
+                        <h3>Speaker Portable</h3>
+                        <ul>
+                            <li>Merk Nakamichi dengan harga: Rp.400.000</li>
+                            <li>Merk Peavy dengan harga: Rp.500.000</li>
+                            <li>Merk Ads dengan harga: Rp.600.000</li>
+                            <li>Merk Yamaha dengan harga: Rp.700.000</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col4">
                     <img src="img/img-2.jpeg" alt="Daily Market 2">
                     <p>Sound System</p>
                     <p>Sistem suara yang kuat dan jernih, cocok untuk acara-acara yang besar dan meriah.</p>
-                    <a href="https://images.app.goo.gl/ceAZ5HZK2gT7dKqQ7" class="btn-dly">Lihat Detail</a>
+                    <button class="showMoreBtn btn-dly">Lihat Lainnya</button>
+                    <div class="moreInfo" style="display:none;">
+                        <h3>Sound System</h3>
+                        <ul>
+                            <li>Paket acara dakwah dengan harga Rp.2.000.000</li>
+                            <li>Paket Acara pesta dengan harga Rp.1.000.000</li>
+                            <li>Paket yg kecil dengan harga Rp.800.000</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col4">
                     <img src="img/img-3.jpeg" alt="Daily Market 3">
                     <p>Microphone</p>
                     <p>Microphone dengan kualitas suara terbaik, ideal untuk presentasi dan konser.</p>
-                    <a href="https://images.app.goo.gl/MqkBzG8QyNAopZSN6" class="btn-dly">Lihat Detail</a>
+                    <button class="showMoreBtn btn-dly">Lihat Lainnya</button>
+                    <div class="moreInfo" style="display:none;">
+                        <h3>Microphone</h3>
+                        <ul>
+                            <li>Merk ADS dengan harga: Rp. 100.000</li>
+                            <li>Merk Peavy dengan harga: Rp. 200.000</li>
+                            <li>Merk Nakamichi dengan harga: Rp. 150.000</li>
+                            <li>Merk Wisdom dengan harga: Rp. 250.000</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,6 +150,19 @@
     </footer>
     <!-- Footer Selesai -->
 
+    <script>
+        document.querySelectorAll('.showMoreBtn').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreInfo = button.nextElementSibling;
+                if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                    moreInfo.style.display = 'block';
+                    button.textContent = 'Lihat Lebih Sedikit';
+                } else {
+                    moreInfo.style.display = 'none';
+                    button.textContent = 'Lihat Lainnya';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
