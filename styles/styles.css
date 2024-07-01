@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col6 {
+    flex: 0 0 48%;
+    margin: 1%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav */
+.nav-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    color: darkred;
+}
+
+span {
+    color: red;
+}
+
+.profil .btn {
+    color: white;
+    background: darkred;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.btn-cta {
+    color: white;
+    background: darkred;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.btn-cta:hover {
+    color: white;
+    background: black;
+}
+
+.profil .btn:hover {
+    color: white;
+    background: black;
+}
+
+.btn-dly {
+    color: white;
+    background: darkred;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.btn-dly:hover {
+    color: white;
+    background: black;
+}
+
+
+/* Hero Section */
+.hero {
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+
+.hero-desc h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-desc p {
+    font-size: 18px;
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Daily Market Section */
+.daily-market {
+    background: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.daily-market h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.daily-market .row {
+    justify-content: center;
+}
+
+.daily-market .col4 {
+    flex: 0 0 30%;
+    margin: 1%;
+}
+
+.daily-market .col4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.daily-market .col4 p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* Catalog Section */
+.catalog {
+    background: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.catalog h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.catalog p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.catalog .btn {
+    color: white;
+    background: darkred;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.catalog .btn:hover {
+    color: white;
+    background: black;
+}
+    
